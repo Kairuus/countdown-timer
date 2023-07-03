@@ -1,0 +1,89 @@
+
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(rgba(157, 240, 240, 0.685), rgba(70, 233, 170, 0.5)), url('../assets/timer.png') ;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 40px;
+}
+
+.title-div{
+   h1{
+    font-size: 65px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  .title-div i{
+    font-size: 60px;
+  }
+}
+
+.inputs-div{
+  margin: 20px 0 10px 0;
+
+  input{
+    font-family: 'Poppins', sans-serif;
+    height: 40px;
+    font-size: 20px;
+    margin: 0 5px;
+    background: transparent;
+    outline: 0;
+    border: 5px solid black;
+    border-radius: 30px;
+    padding: 0 5px;
+
+    &::placeholder{
+      color: black;
+    }
+  }
+
+  .event-input{
+    width: 250px;
+  }
+
+  .start-button{
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    transition-duration: 0.25s;
+
+    &:hover{
+      background-color: black;
+      color: white;
+      transform: scale(1.1);
+    }
+  }
+}
+
+
+.countdown-div{
+  margin-top: 20px;
+
+  .countdown{
+    font-size: 200px;
+  }
+
+  .info{
+    font-size: 40px;
+  }
+
+}
+
+.warning-div{
+  height: 50px;
+  width: 620px;
+
+  span{
+    margin-right: 10px;
+  }
+}
+
+.warning{
+  font-family: 'Poppins', sans-serif;
+  color: red;
+}
